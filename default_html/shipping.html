@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://jspm.dev/@spectrum-web-components/bundle/elements.js" type="module" async></script>
+    <script src="widgets_data.js"></script>
+    <script src="shipping_data.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="store icon" href="favicon.ico">
+    <title>My Widget Store: Order</title>
+  </head>
+  <body onload="loadShippingPage()">
+    <h1>Shipping</h1>
+      <h2>Address</h2>
+      <p>
+        <input id="address" name="address" type="text" placeholder="Address"></input>
+        <input id="city" name="city" type="text" placeholder="City"></input>
+        <input id="state" name="state" type="text" placeholder="State"></input>
+        <input id="zip" name="zip" type="text" placeholder="Zip Code"></input>
+      </p>
+      <h2>Shipping Speed</h2>
+      <p>
+        <select name="shipping" id="shipping_speed">
+          <option value="express">Express Shipping (1 day, $15.99)</option>
+          <option value="standard">Standard Shipping (5 days, $3.99)</option>
+          <option value="slow">Slow Shipping (10 days, $0.99)</option>
+        </select>
+      </p>
+      <p>
+        <input type="button" value="Place Order" onclick="gotoSummaryPage()"></input>
+      </p>
+    <div id="loading_progress" hidden>
+        <p>Placing order...</p>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://jspm.dev/@spectrum-web-components/bundle/elements.js" type="module" async></script>
+    <script src="widgets_data.js"></script>
+    <script src="shipping_data.js"></script>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="store icon" href="favicon.ico">
+    <title>My Widget Store: Order</title>
+  </head>
+  <body onload="loadSummaryPage()">
+    <h1>Order in!</h1>
+    <p>Thanks for shopping at My Widget Store. Your business is greatly appreciated!</p>
+    <h2>Summary</h2>
+    <table>
+        <tr>
+            <th>Product</th>
+            <th>Color</th>
+            <th>Unit Price</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+        </tr>
+        <tr>
+            <td>Toy Boat</td>
+            <td id="toyboat_color"></td>
+            <td>$15.99</td>
+            <td id="toyboat_quantity">???</td>
+            <td id="toyboat_subtotal">???</td>
+        </tr>
+        <tr>
+            <td>Paper Plane</td>
+            <td id="paperplane_color"></td>
+            <td>$8.52</td>
+            <td id="paperplane_quantity">???</td>
+            <td id="paperplane_subtotal">???</td>
+        </tr>
+        <tr>
+            <td>Stuffed Animal</td>
+            <td id="stuffedanimal_color"></td>
+            <td>$9.13</td>
+            <td id="stuffedanimal_quantity">???</td>
+            <td id="stuffedanimal_subtotal">???</td>
+        </tr>
+        <tr>
+            <td>Train Car</td>
+            <td id="traincar_color"></td>
+            <td>$25.00</td>
+            <td id="traincar_quantity">???</td>
+            <td id="traincar_subtotal">???</td>
+        </tr>
+        <tr>
+            <td>Shipping (<span id="shipping_speed"></span>)</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td id="shipping_subtotal">???</td>
+        </tr>
+        <tr>
+            <td>Total</td>
+            <td></td>
+            <td></td>
+            <td id="total_quantity">???</td>
+            <td id="total_cost">???</td>
+        </tr>
+    </table>
+    <p>Shipping to: <span id="address"></span> <span id="city"></span>, <span id="state"></span> <span id="zip"></span>.</p>
+    <p>Your order will arrive on: <span id="arrival_date"> TBD</span>.</p>
+  </body>
+</html>

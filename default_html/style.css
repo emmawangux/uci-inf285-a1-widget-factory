@@ -1,0 +1,15 @@
+.image {
+    max-width: 200px;
+}
+
+.rating {
+    font-weight: 700;
+}
+
+.price {
+    color: purple;
+}
+
+.name {
+    color: forestgreen;
+}
