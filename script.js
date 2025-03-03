@@ -127,5 +127,6 @@ function gotoShippingPage() {
 
 function gotoSummaryPage() {
     saveShippingOptions();
+    //Simulate taking two seconds to place the order
     navigateTo('summary.html', 2000);
 }
