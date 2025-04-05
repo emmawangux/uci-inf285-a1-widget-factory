@@ -1,58 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <script src="https://jspm.dev/@spectrum-web-components/bundle/elements.js" type="module" async></script>
+    <script
+      src="https://jspm.dev/@spectrum-web-components/bundle/elements.js"
+      type="module"
+      async
+    ></script>
     <script src="widgets_data.js"></script>
     <script src="shipping_data.js"></script>
     <script src="script.js"></script>
-    <link rel="stylesheet" href="style.css">
-    <link rel="store icon" href="favicon.ico">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="store icon" href="favicon.ico" />
     <title>My Widget Store: Order</title>
   </head>
   <body onload="loadOrderPage()">
     <h1>My Widget Store</h1>
     <div class="widget">
       <h2 class="name">Toy Boat</h2>
-      <img class="image" src="images/toyboat.jpg">
+      <img class="image" src="images/toyboat.jpg" />
       <p class="price">$15.99</p>
       <p class="rating">4.6</p>
       <p>
-        How many? <input type="number" id="toyboat_quantity" min="0" max="10">
-        What color? <input type="color" id="toyboat_color"/>
+        How many?
+        <input type="number" id="toyboat_quantity" min="0" max="10" /> What
+        color? <input type="color" id="toyboat_color" />
       </p>
     </div>
     <div class="widget">
       <h2 class="name">Paper Plane</h2>
-      <img class="image" src="images/paperplane.jpg">
+      <img class="image" src="images/paperplane.jpg" />
       <p class="price">$8.52</p>
       <p class="rating">3.8</p>
       <p>
-        How many? <input type="number" id="paperplane_quantity" min="0" max="10">
-        What color? <input type="color" id="paperplane_color"/>
+        How many?
+        <input type="number" id="paperplane_quantity" min="0" max="10" /> What
+        color? <input type="color" id="paperplane_color" />
       </p>
     </div>
     <div class="widget">
       <h2 class="name">Stuffed Animal</h2>
-      <img class="image" src="images/stuffedanimal.jpg">
+      <img class="image" src="images/stuffedanimal.jpg" />
       <p class="price">$9.13</p>
       <p class="rating">4.9</p>
       <p>
-        How many? <input type="number" id="stuffedanimal_quantity" min="0" max="10">
-        What color? <input type="color" id="stuffedanimal_color"/>
+        How many?
+        <input type="number" id="stuffedanimal_quantity" min="0" max="10" />
+        What color? <input type="color" id="stuffedanimal_color" />
       </p>
     </div>
     <div class="widget">
       <h2 class="name">Train Car</h2>
-      <img class="image" src="images/traincar.jpg">
+      <img class="image" src="images/traincar.jpg" />
       <p class="price">$25.00</p>
       <p class="rating">2.4</p>
       <p>
-        How many? <input type="number" id="traincar_quantity" min="0" max="10">
-        What color? <input type="color" id="traincar_color"/>
+        How many?
+        <input type="number" id="traincar_quantity" min="0" max="10" /> What
+        color? <input type="color" id="traincar_color" />
       </p>
     </div>
-    <input type="button" value="Check Out" onclick="gotoShippingPage()"></input>
-    <p class="attribution">"<a rel="noopener noreferrer" href="https://www.flickr.com/photos/51638848@N00/3694330089">Toy boat</a>" by <a rel="noopener noreferrer" href="https://www.flickr.com/photos/51638848@N00">Jon Olav</a>, "<a rel="noopener noreferrer" href="https://www.flickr.com/photos/54133975@N08/20095707950">Cruelty to st￭ animals? #dogtoy #hungouttodry</a>" by <a rel="noopener noreferrer" href="https://www.flickr.com/photos/54133975@N08">Fresh On The Net</a>, "<a rel="noopener noreferrer" href="https://www.flickr.com/photos/99424477@N04/10562534896">Wooden toy train</a>" by <a rel="noopener noreferrer" href="https://www.flickr.com/photos/99424477@N04">prague.czech.photo</a>, and "<a rel="noopener noreferrer" href="https://www.flickr.com/photos/25368895@N00/3129971362">JAL Paper Plane</a>" by <a rel="noopener noreferrer" href="https://www.flickr.com/photos/25368895@N00">ayustety</a> are licensed under <a rel="noopener noreferrer" href="https://creativecommons.org/licenses/by/2.0/?ref=openverse">CC BY 2.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /></a>.</p>
-    <p class="attribution">"<a rel="noopener noreferrer" href="https://creativecommons.org/licenses/by/4.0/">1fec.svg</a>" by <a rel="noopener noreferrer" href="https://github.com/twitter/twemoji">Twitter Twemoji</a> is licensed under <a rel="noopener noreferrer" href="https://creativecommons.org/licenses/by/4.0/">CC BY 4.0 <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /><img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" style="height: 1em; margin-right: 0.125em; display: inline;" /></a>.</p>
+    <input type="button" value="Check Out" onclick="gotoShippingPage()" />
+    <p class="attribution">
+      "<a
+        rel="noopener noreferrer"
+        href="https://www.flickr.com/photos/51638848@N00/3694330089"
+        >Toy boat</a
+      >" by
+      <a
+        rel="noopener noreferrer"
+        href="https://www.flickr.com/photos/51638848@N00"
+        >Jon Olav</a
+      >, "<a
+        rel="noopener noreferrer"
+        href="https://www.flickr.com/photos/54133975@N08/20095707950"
+        >Cruelty to st￭ animals? #dogtoy #hungouttodry</a
+      >" by
+      <a
+        rel="noopener noreferrer"
+        href="https://www.flickr.com/photos/54133975@N08"
+        >Fresh On The Net</a
+      >, "<a
+        rel="noopener noreferrer"
+        href="https://www.flickr.com/photos/99424477@N04/10562534896"
+        >Wooden toy train</a
+      >" by
+      <a
+        rel="noopener noreferrer"
+        href="https://www.flickr.com/photos/99424477@N04"
+        >prague.czech.photo</a
+      >, and "<a
+        rel="noopener noreferrer"
+        href="https://www.flickr.com/photos/25368895@N00/3129971362"
+        >JAL Paper Plane</a
+      >" by
+      <a
+        rel="noopener noreferrer"
+        href="https://www.flickr.com/photos/25368895@N00"
+        >ayustety</a
+      >
+      are licensed under
+      <a
+        rel="noopener noreferrer"
+        href="https://creativecommons.org/licenses/by/2.0/?ref=openverse"
+        >CC BY 2.0
+        <img
+          src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
+          style="height: 1em; margin-right: 0.125em; display: inline" /><img
+          src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
+          style="height: 1em; margin-right: 0.125em; display: inline" /></a
+      >.
+    </p>
+    <p class="attribution">
+      "<a
+        rel="noopener noreferrer"
+        href="https://creativecommons.org/licenses/by/4.0/"
+        >1fec.svg</a
+      >" by
+      <a rel="noopener noreferrer" href="https://github.com/twitter/twemoji"
+        >Twitter Twemoji</a
+      >
+      is licensed under
+      <a
+        rel="noopener noreferrer"
+        href="https://creativecommons.org/licenses/by/4.0/"
+        >CC BY 4.0
+        <img
+          src="https://mirrors.creativecommons.org/presskit/icons/cc.svg"
+          style="height: 1em; margin-right: 0.125em; display: inline" /><img
+          src="https://mirrors.creativecommons.org/presskit/icons/by.svg"
+          style="height: 1em; margin-right: 0.125em; display: inline" /></a
+      >.
+    </p>
   </body>
 </html>
